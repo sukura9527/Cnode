@@ -2,7 +2,7 @@
   <div>
     <h3>All</h3>
     <div class="list" v-for="item in list" :key="item.id">
-      <img :src="item.author.avatar_url" alt />
+      <img class="tx" :src="item.author.avatar_url" alt />
       -{{item.reply_count}}/{{item.visit_count}}- -{{item.title}}- -{{item.Last_reply_at}}
     </div>
   </div>
@@ -40,5 +40,10 @@ export default {
 .list {
   height: 30px;
   width: 900px;
+  margin: 0;
+  .tx {
+    height: 30px;
+    width: ;
+  }
 }
 </style>
